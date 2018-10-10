@@ -22,7 +22,6 @@ var url;
 main();
 function main() {
 
-console.log(typeof arg);
     switch(command) {
 
         case "my-tweets":
