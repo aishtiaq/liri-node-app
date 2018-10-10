@@ -30,7 +30,6 @@ function main() {
         case "spotify-this-song":
             if(arg==="") {
                 logFile("\n");
-                console.log("no arg");
                 url="https://api.spotify.com/v1/tracks/0hrBpAOgrt8RXigk83LLNE";
             } else {
                 logFile(arg+"\n");
@@ -158,9 +157,6 @@ function readFile() {
         if (error) {
           return console.log(error);
         }
-      
-        
-        console.log(data);
       
         // Then split it by commas (to make it more readable)
         var dataArr = data.split(",");
